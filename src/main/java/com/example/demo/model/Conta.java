@@ -5,12 +5,15 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
+import java.math.BigDecimal;
+
 @Entity
-public class user {
+public class Conta {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private String name;
-    private String documet;
-    private String dateBirth;
+    private String contaNumero;
+    private String agencia;
+    private BigDecimal saldo;
+
 }
